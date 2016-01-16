@@ -41,6 +41,7 @@
 
                   <td> {{ listing.code }} </td>
                   <td> {{ listing.name }} </td>
+                  <td> <button ng-click="deleteListing($index)"> Remove </button> </td>
             </tr>
 
 
@@ -57,7 +58,8 @@
               Write an HTML form that adds new listings to the directory
 
             -->
-        <input ng-model="string"> </input>
+        
+        <button ng-click="addListing()"> Add Listing </input>
 
         </div>
         <div class="col-md-6">
